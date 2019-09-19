@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.informacion-scroll{
+    color:white;
+    height: 30em;
+    overflow-y: scroll;
+}
+.well{
+
+    color:black;
+    
+}
+.well-personalizado:hover{
+    background-color: aqua;
+}
+
+.amarillo{
+    background-color:  rgba(226,163,28,0.4);
+    transition: .4s linear;
+}
