@@ -229,12 +229,7 @@ map.on('click',function(e){
     document.getElementById('traza').disabled = false;
     marcador = L.marker(e.latlng).addTo(map).on('click',function(e){
         miMarcador=this.getLatLng();
-        contador++;
-        console.log(`Usted ha solicitado ${contador} veces para este marcador`);
-        if(contador==2){
-            map.removeLayer(marcador);
-            contador=1;
-        }
-    });
+        miMarcador=this.getLatLng();
+    }).bindPopup(`${e.latlng}`);
 });
 
